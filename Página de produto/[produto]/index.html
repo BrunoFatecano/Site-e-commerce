@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <!--BOOTSTRAP-->
-    <title>Início</title>
+    <title>[Produto]</title>
 </head>
 <body>
     <!--NAVBAR-->
@@ -76,30 +78,191 @@
   </div>
     <!--NAVBAR-->
     <!--PRODUTO-->
-    <div class="wrap" style="margin-top:6em">
-<div class="container d-flex" >
+    <div class="wrap col-10" style="margin-top:6em">
+<div class="container d-flex align-items-center justify-content-center" >
 
         <!--FOTO-->
-        <div class="container col-6 ">
+        <div class="image-container container col-6 align-items-center justify-content-center ">
             <div class="card justify-content-center align-items-center justify-content-center align-items-center d-flex" style="width: 18rem;">
                 <img src="/img/Produto 1.jpg" class="card-img-top" alt="...">
               </div>
         </div>
         <!--FOTO-->
         <!--DETALHES-->
-<div class="container col-6 ">
-    <h1 class="nome-produto justify-content-center align-items-center d-flex">
-        [Nome do Produto]
-    </h1>
-    <p class="descript">
+<div class="container col-6 justify-content-center ">
+<div class="titulo">
+  <h1 class="nome-produto justify-content-center align-items-center d-flex fw-bolder">
+    [Nome do Produto]
+</h1>
+</div>
+  <div class="sku-container">
+    <h5 class="sku" style="color:grey">SKU: XXXX-00000</h5>
+  </div>  
+    <div class="descricao">
+      <p class="descript">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
         Sequi dolorum eos molestiae nam ipsa architecto laudantium corrupti blanditiis quis itaque, cupiditate mollitia, 
         soluta nihil reprehenderit aliquid dolore suscipit voluptatum iure!
     </p>
+    </div>
+    <div class="nota">
+      <h5>Avaliações</h5>
+      <div class="stars d-flex">
+        <i class="fa-sharp fa-solid fa-star"></i>
+        <i class="fa-sharp fa-solid fa-star"></i>
+        <i class="fa-sharp fa-solid fa-star"></i>
+        <i class="fa-sharp fa-solid fa-star"></i>
+        <i class="fa-sharp fa-solid fa-star"></i>
+      </div>
+    </div>
+    <div class="preco-container">
+      <h3 class="preco fw-bolder">
+        R$ 100.00
+      </h3>
+    </div>
+<div class="comprar d-flex align-items-center">
+  <div class="add-mais">
+    <input type="number" 
+    id="quantity" 
+    name="quantity" 
+    min="1" max="500" 
+    placeholder="Quantia">
+  </div>
+  <div class="botao-compra">
+    <button type="button" class="btn btn-outline-success fw-bolder">Comprar</button>
+  </div>
+
+</div>
+<div class="btn-ir-ckeckout">
+  <button type="button" class="btn btn-outline-warning btn-lg">Finalizar compra</button>
+
+</div>
 </div>
         <!--DETALHES-->
 </div>
 </div>
 <!--PRODUTO-->
+<div class="divider">
+  <hr class="solid">
+</div>
+<!--TABELA DESCRICAO-->
+<div class="detalhes  align-items-center">
+  <div class="titulo-detalhes">
+    <h1 class="detalhes d-flex justify-content-center fw-bolder">
+      Detalhes
+    </h1>
+  </div>
+  <div class="tabela-descricao">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Descrição</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Entrega</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Avaliações</button>
+      </li>
+
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="descricao" tabindex="0">
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis vero voluptate exercitationem recusandae quae architecto illo nobis laudantium minima temporibus numquam itaque placeat vel dolorem obcaecati, necessitatibus eos doloribus. Blanditiis.
+        </p>
+      </div>
+      <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+        
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Peso</th>
+              <th scope="col">Altura</th>
+              <th scope="col">Largura</th>
+              <th scope="col">Profundidade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>150g</td>
+              <td>10cm</td>
+              <td>15cm</td>
+              <td>10cm</td>
+            </tr>
+          </tbody>
+        </table>
+     
+      </div>
+      <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">Avaliações</div>
+      
+    </div>
+  </div>
+</div>
+<!--TABELA DESCRICAO-->
+<div class="divider ">
+  <hr class="solid">
+</div>
+<!--PRODUTOS RELACIONADOS-->
+<div class="produtos-relacionados d-flex">
+  <h2 class="fw-bolder">
+    Produtos Relacionados
+  </h2>
+
+</div>
+
+<div class="container linha-de-ofertas d-flex justify-content-around col-12" >
+
+  <!--produto 1-->
+  
+      <div class="card" style="width: 480px;">
+          <img src="/img/Produto 1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">[NOME DO PRODUTO]</h5>
+            <p class="card-text">[DESCRIÇÃO]</p>
+            <p class="custo"></p>
+            <p class="custo"><strong>R$200.00</strong></p>
+            <a href="/Página de produto/[produto]/index.html" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+  <!--produto 1-->
+  
+  
+  <!--produto 2-->
+      <div class="card" style="width: 480px;">
+          <img src="/img/Produto 1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">[NOME DO PRODUTO]</h5>
+            <p class="card-text">[DESCRIÇÃO]</p>
+            <p class="custo"><strong>R$200.00</strong></p>
+            <a href="/Página de produto/[produto]/index.html" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+  <!--produto 2-->
+  <!--produto 3-->
+  <div class="card" style="width: 480px;">
+      <img src="/img/Produto 1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">[NOME DO PRODUTO]</h5>
+        <p class="card-text">[DESCRIÇÃO]</p>
+        <p class="custo"><strong>R$200.00</strong></p>
+        <a href="/Página de produto/[produto]/index.html" class="btn btn-primary">Comprar</a>
+      </div>
+    </div>
+  <!--produto 3-->
+    <!--produto 4-->
+    <div class="card" style="width: 480px;">
+      <img src="/img/Produto 1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">[NOME DO PRODUTO]</h5>
+        <p class="card-text">[DESCRIÇÃO]</p>
+        <p class="custo"><strong>R$200.00</strong></p>
+        <a href="/Página de produto/[produto]/index.html" class="btn btn-primary">Comprar</a>
+      </div>
+    </div>
+  <!--produto 4-->
+  </div>
+<!--PRODUTOS RELACIONADOS-->
+
 </body>
 </html>
