@@ -20,10 +20,10 @@
 </head>
 <body>
     <!--NAVBAR-->
-    <div class="nav">
+    <div class="nav" style="z-index: 3;">
       <nav class="navbar navbar-expand-lg bg-body-tertiary position-fixed z-3 d-flex justify-content-center col-12" >
           <div class="container-fluid col-8">
-            <a class="navbar-brand" href="/index.html">Logo</a>
+            <a class="navbar-brand" href="/index.html"><img src="/img/logo/SVG/Logo.svg" height="60em" alt="" srcset=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -35,32 +35,7 @@
                 <li class="nav-item">
                   <a class="nav-link" href="/Sobre">Sobre</a>
                 </li>
-                <li class="nav-item dropdown col 12">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Cadastre-se
-                  </a>
-  
-                  <ul class="dropdown-menu">
-                      <form>
-                          <div class="mb-3 col-4">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                          </div>
-                          <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
-                          </div>
-                          <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                          </div>
-                          <button type="submit" class="btn btn-primary">Submit</button>
-                        </form>
-                    
-                  </ul>
-                  
-                </li>
+
                 <li class="nav-item">
                   <a href="/Categorias/eletronicos.html" class="nav-link active">Eletrônicos
                   </a>
@@ -88,7 +63,130 @@
         </nav>
     </div>
       <!--NAVBAR-->
+<div class="h1">
+  <h1 class="title-cart fw-bolder d-flex justify-content-center align-items-center">Seu carrinho</h1>
+</div>
 
+   
+  <!--Titulo Page-->
+  <!--Titulo categoria-->
+<h1 class="title-cat fw-bolder d-flex justify-content-center align-items-center">
+  Suas compras
+</h1>
+<!--Titulo categoria-->
+   <!--Titulo Page-->
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Foto</th>
+          <th scope="col">Quantidade</th>
+          <th scope="col">Preço</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td><img src="/img/Produto 1.jpg" style="height: 150px;" alt=""></td>
+          <td><div class="add-mais">
+            <input type="number" 
+            id="quantity" 
+            name="quantity" 
+            min="1" max="500" 
+            placeholder="1">
+          </div></td>
+          <td>R$150.00</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td><img src="/img/Produto 1.jpg" style="height: 150px;" alt="" srcset=""></td>
+          <td>  <div class="add-mais">
+            <input type="number" 
+            id="quantity" 
+            name="quantity" 
+            min="1" max="500" 
+            placeholder="1">
+          </div></td>
+          <td>R$250.00</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td ><img src="/img/Produto 1.jpg" style="height: 150px;" alt="" srcset=""></td>
+          <td><div class="add-mais">
+            <input type="number" 
+            id="quantity" 
+            name="quantity" 
+            min="1" max="500" 
+            placeholder="1">
+          </div></td>
+          <td>R$350.00</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="botoes-finalizar d-flex justify-content-center align-items-center">
+      <button type="button" class="btn btn-success" href="/Finalizar/index.html">Finalizar compra</button>
+    </div>
+    <!--PRODUTOS RELACIONADOS-->
+<div class="produtos-relacionados d-flex">
+  <h2 class="fw-bolder">
+    Produtos Relacionados
+  </h2>
+
+</div>
+
+<div class="container linha-de-ofertas d-flex justify-content-around col-12" >
+
+  <!--produto 1-->
+  
+      <div class="card" style="width: 480px;">
+          <img src="/img/Produto 1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">[NOME DO PRODUTO]</h5>
+            <p class="card-text">[DESCRIÇÃO]</p>
+            <p class="custo"></p>
+            <p class="custo"><strong>R$200.00</strong></p>
+            <a href="/Página de produto/[produto]/index.html" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+  <!--produto 1-->
+  
+  
+  <!--produto 2-->
+      <div class="card" style="width: 480px;">
+          <img src="/img/Produto 1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">[NOME DO PRODUTO]</h5>
+            <p class="card-text">[DESCRIÇÃO]</p>
+            <p class="custo"><strong>R$200.00</strong></p>
+            <a href="/Página de produto/[produto]/index.html" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+  <!--produto 2-->
+  <!--produto 3-->
+  <div class="card" style="width: 480px;">
+      <img src="/img/Produto 1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">[NOME DO PRODUTO]</h5>
+        <p class="card-text">[DESCRIÇÃO]</p>
+        <p class="custo"><strong>R$200.00</strong></p>
+        <a href="/Página de produto/[produto]/index.html" class="btn btn-primary">Comprar</a>
+      </div>
+    </div>
+  <!--produto 3-->
+    <!--produto 4-->
+    <div class="card" style="width: 480px;">
+      <img src="/img/Produto 1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">[NOME DO PRODUTO]</h5>
+        <p class="card-text">[DESCRIÇÃO]</p>
+        <p class="custo"><strong>R$200.00</strong></p>
+        <a href="/Página de produto/[produto]/index.html" class="btn btn-primary">Comprar</a>
+      </div>
+    </div>
+  <!--produto 4-->
+  </div>
+<!--PRODUTOS RELACIONADOS-->
 
     
 </body>
