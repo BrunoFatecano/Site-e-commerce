@@ -45,3 +45,258 @@
 .imagem-sobre{
     margin-top: 300px;
 }
+
+
+
+
+
+
+
+/*** Footer ***/
+
+footer.footer-section {
+    background-color: #111111;
+    color: #fff;
+    padding: 80px 0;
+}
+
+.copyright a {
+    color: #f75553;
+}
+
+.copyright a:hover {
+    color: #fff;
+}
+
+footer.footer-section {
+    background-color: #111111;
+    color: #fff;
+    padding: 80px 0;
+    padding-bottom: 0px
+}
+
+.social-box ul li {
+    display: inline-block;
+}
+
+.social-box ul li a {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    border-radius: 100%;
+    text-align: center;
+    padding: 6px 0;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.social-box ul li a:hover {
+    background-color: white;
+    color: #333;
+}
+
+.fb {
+    background-color: #3b5998
+}
+
+.tw {
+    background-color: #02b0e8
+}
+
+.pint {
+    background-color: #b00a1b
+}
+
+.you {
+    background-color: #c22e2a
+}
+
+.vime {
+    background-color: #00a098
+}
+
+
+/*** ft category ***/
+
+h2.ft-title span {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+}
+
+h2.ft-title span:after {
+    content: "";
+    width: 21%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+
+.ft-link ul li a {
+    color: #fff;
+    line-height: 37px;
+    text-transform: capitalize;
+}
+
+.ft-link ul li a:hover {
+    color: #f75553;
+}
+
+.twitter-dec > p {
+    font-size: 13px;
+    margin: 7px 0;
+}
+
+.twitter-meta ul li {
+    display: inline-block;
+    margin: 0px 1px;
+}
+
+.twitter-meta ul li a span {
+    margin: 4px;
+}
+
+.view-movi a:hover {
+    color: #f75453;
+}
+
+.ft-twitter-icon {
+    display: inline-block;
+    clear: both;
+    float: left;
+    min-height: 50px;
+    margin-right: 24px;
+    margin-top: 20px;
+    color: #f75453;
+    font-size: 17px;
+}
+
+.ft-twitter-icon span {
+    position: relative;
+}
+
+.ft-twitter-icon span:after {
+    content: "";
+    height: 41px;
+    width: 2px;
+    background: #f75453;
+    position: absolute;
+    right: -9px;
+    top: -12px;
+}
+
+.twitter-dec > a:hover {
+    color: #f75453;
+}
+
+.ft-content.twitter-contnt {
+    padding: 21px;
+    background-color: #171717;
+}
+
+.twitter-dec {
+    float: left;
+    width: 80%;
+}
+
+.ft-twitter-feed {
+    overflow: hidden;
+}
+
+.twitter-dec > a {
+    color: #fff;
+    font-weight: bold;
+}
+
+.twitter-dec > a:hover {
+    color: #f75453;
+}
+
+.twitter-meta ul li a {
+    color: #999999;
+}
+
+.twitter-meta ul li a:hover {
+    color: #f75453;
+}
+
+.newsletter-input {
+    position: relative;
+    margin-top: 10px;
+}
+
+.newsletter-input input {
+    width: 100%;
+    border-radius: 100px;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 7px 16px;
+    height: 42px;
+    color: #fff;
+}
+
+.cat-menu ul li:focus {
+    outline: none;
+}
+
+button.newsletter-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: transparent;
+    color: #fff;
+    border: transparent;
+    border-left: 1px solid #fff;
+    padding: 10px 19px;
+    height: 100%;
+}
+
+.newsletter-input input:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #fff;
+}
+
+button.newsletter-btn:hover {
+    background: #f75453;
+    border-radius: 100px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-color: #f75453;
+}
+
+.ft-widget .newsletter {
+    margin-top: 20px;
+}
+
+.footer-menu ul li {
+    display: inline-block;
+    margin: 6px 0;
+}
+
+.footer-menu ul li a {
+    margin-right: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.darg-bg .footer-bottom {
+    background-color: #151a1f;
+}
+
+.darg-bg footer.footer-section {
+    background-color: #171d23;
+}
+
+.footer-bottom {
+    padding: 22px 0;
+    background-color: #171717;
+    margin-top: 50px;
+}
+
+.footer-menu ul li a:hover {
+    color: #f75553;
+}
